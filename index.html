@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/script.js"></script>
+    <title>realcalculator</title>
+</head>
+
+<body>
+
+
+    <div class="hd-cont">
+        <ul>
+            <li>
+                MARTIC
+            </li>
+            <li>
+                SCI <span>Calculator</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="calc-body">
+
+        <div class="input-cont">
+            <input class="inputA" placeholder="tap screen to remove small screen" value="" id="input-js" readonly>
+            <div>
+                <input value="" id="inputEval" readonly>
+            </div>
+        </div>
+
+        <div class="buttons-cont">
+            <div class="mn-cont">
+                <div class="lbt">
+                    <button id="buttinON" class="buttin">ON</button>
+                    <button id="buttinOFF" class="buttin">OFF</button>
+                </div>
+                <div id="spec-button">
+                    <button id="sin">sin</button>
+                    <button id="cos">cos</button>
+                    <button id="tan">tan</button>
+                    <button class="opra" id="modulos">
+                        <p>%</p>
+                    </button>
+                    <button class="opra" name="oprator" id="dot">Dot(.)<p>.</p></button>
+                </div>
+            </div>
+            <button class="nums" id="one">1</button>
+            <button class="nums" id="two">2</button>
+            <button class="nums" id="three">3</button>
+            <button class="nums" id="four">4</button>
+            <button class="nums" id="five">5</button>
+            <button class="nums" id="six">6</button>
+            <button class="nums" id="seven">7</button>
+            <button class="nums" id="eight">8</button>
+            <button class="nums" id="nine">9</button>
+            <button class="nums" id="zero">0</button>
+
+
+
+            <!-- OPRATORS -->
+
+            <div id="opra">
+                <button id="minus" class="opra2">-</button>
+                <button class="opra opra2" id="add" name="OPRATORS">
+                    <p>+</p>
+                </button>
+                <button class="opra opra2" id="times" name="OPRATORS">x<p id="times2">*</p></button>
+                <button class="opra opra2" id="divide2" name="OPRATORS">
+                    <p>/</p>
+                </button>
+                <button id="equalto">=</button>
+            </div>
+        </div>
+
+        <!-- REMOVEBUTTONS -->
+
+        <div class="clear">
+            <button id="remove"><img class="img" src="img/cancel.png" alt=""></button>
+            <button id="clear">AC</button>
+
+            <!-- SQUAREROOTBUTTONS -->
+
+            <button id="sq-rt">
+                <p>sqrt</p><img class="img" src="img/3485580.png" alt="">
+            </button>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

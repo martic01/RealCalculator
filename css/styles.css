@@ -1,0 +1,864 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li,
+p,
+button,
+input {
+    cursor: pointer;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+
+    background-color: rgb(16, 15, 15);
+}
+
+
+.hd-cont {
+    margin: 10px auto;
+    width: 500px;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(18, 18, 18);
+    margin-bottom: 100px;
+
+    animation: shadow 5s linear forwards;
+}
+
+@keyframes shadow {
+
+    0% {
+        box-shadow: 0 0 7px 1px white;
+
+    }
+
+    20% {
+
+        box-shadow: 0 0 25px -5px red;
+
+    }
+
+    40% {
+
+        box-shadow: 0 0 50px -5px red;
+    }
+
+    60% {
+
+        box-shadow: 0 0 75px -5px red;
+    }
+
+    80% {
+
+        box-shadow: 0 0 100px -5px white;
+
+
+    }
+
+    100% {
+        box-shadow: 0 0 9px 2px white;
+    }
+
+
+}
+
+.hd-cont ul li:first-child {
+    text-align: center;
+    color: aqua;
+    font-size: 25px;
+
+
+    animation: in 5s linear;
+
+}
+
+@keyframes in {
+
+    0% {
+
+        transform: scaleX(0);
+        border-bottom: 2px solid red;
+    }
+
+
+    50% {
+        width: 100%;
+        transform: scaleX(0.3);
+        border-bottom: 2px solid red;
+    }
+
+
+    100% {
+        width: 25%;
+        transform: scaleX(1);
+        border-bottom: 2px solid red;
+    }
+
+
+}
+
+.hd-cont ul li:nth-child(2) {
+    text-align: center;
+    color: blue;
+    font-size: 35px;
+
+    padding: 5px 0;
+
+}
+
+.hd-cont ul li:nth-child(2) span {
+    text-align: center;
+    color: red;
+    font-size: 30px;
+
+
+
+    animation: in2 6s linear infinite;
+
+}
+
+@keyframes in2 {
+
+    0% {
+
+        font-size: 25px;
+
+
+    }
+
+    10% {
+        font-size: 25px;
+
+    }
+
+    20% {
+        padding: 0 13px;
+        border-right: 15rcap solid red;
+        border-left: 2px solid red;
+        font-size: 32px;
+    }
+
+
+    40% {
+        padding-left: 20px;
+        border-right: 5px solid blue;
+
+
+
+
+    }
+
+    60% {
+        padding: 0 20px;
+        border-left: 10px solid blue;
+
+
+    }
+
+    80% {
+
+        padding: 15px 30px;
+        border-right: 2px solid red;
+        border-left: 2px solid red;
+        border-bottom: 10px solid blue;
+
+
+    }
+
+    90% {
+
+        padding: 15px 30px;
+        font-size: 35px;
+        border-right: 2px solid red;
+        border-left: 2px solid red;
+        border-bottom: 2px solid red;
+
+    }
+
+    100% {
+
+        font-size: 30px;
+
+
+    }
+
+}
+
+
+.calc-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin:150px auto 0px;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+
+
+    background-color: black;
+
+
+}
+
+.firstam {
+    animation: green 3s linear forwards;
+}
+
+@keyframes green {
+
+    0% {
+
+        border: none;
+
+    }
+
+
+    20% {
+
+        border-right: 6px solid white;
+    }
+
+
+    40% {
+
+
+        border-bottom: 5px solid white;
+    }
+
+    60% {
+
+
+        border-left: 4px solid white;
+    }
+
+
+    80% {
+
+
+        border-top: 3px solid white;
+    }
+
+    100% {
+
+        box-shadow: 0 0 13px 2px white;
+    }
+
+
+}
+
+.input-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    /* box-shadow: 0 0 5px 1px blue; */
+
+}
+
+#eq-input {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+    margin-top: -5px;
+    width: 70%;
+    height: 8%;
+}
+
+.input-cont div {
+    margin-top: -70px;
+    width: 290px;
+    height: 70%;
+    margin-left: 90px;
+    font-size: 15px;
+    font-weight: 800;
+    outline: none;
+}
+
+.fade2 {
+    opacity: 0.7;
+}
+
+#inputEval {
+    background-color: rgb(44, 43, 43);
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 80%;
+    margin-top: 7px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: transparent;
+
+    display: none;
+
+}
+
+.newcolor {
+    background-color: rgb(240, 238, 238) !important;
+    color: black !important;
+}
+
+.fade {
+    opacity: 0.3;
+}
+
+#eq-input div:hover,
+input:hover {
+    border: 2px red solid;
+    color: red;
+}
+
+
+.input-cont .inputA {
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 80%;
+    height: 80%;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 20px;
+    color: transparent;
+    background-color: rgb(44, 43, 43);
+
+}
+
+.secoundam {
+    animation: input 3s linear forwards;
+}
+
+@keyframes input {
+
+    0% {
+
+        border: none;
+
+    }
+
+
+    20% {
+
+        background-color: white;
+        border: none;
+
+    }
+
+
+    40% {
+        background-color: white;
+
+        border: none;
+    }
+
+    60% {
+        background-color: white;
+        border: none;
+    }
+
+
+    80% {
+        background-color: white;
+
+        border: none;
+    }
+
+    100% {
+        color: black;
+        background-color: white;
+        box-shadow: 0 0 5px 1px blue;
+    }
+
+
+
+
+}
+
+
+.input-cont input:active {
+    outline: 2px dotted red;
+}
+
+.buttons-cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 17px;
+    width: 70%;
+    height: 66%;
+    /* box-shadow: 0 0 5px 1px rgb(16, 253, 154); */
+
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+#spec-button {
+    display: flex;
+    gap: 10px;
+    width: 97%;
+    height: 100%;
+    transform: translateX(-900px);
+
+}
+
+
+#dot p {
+    display: none;
+}
+
+#dot {
+    font-size: 14px;
+}
+
+#spec-button button {
+    height: 95%;
+    width: 40%;
+}
+
+.thirdam {
+    animation: spec 2.5s linear forwards;
+}
+
+@keyframes spec {
+
+    0% {
+
+        border: none;
+
+    }
+
+
+    20% {
+
+        box-shadow: 0 0 5px 2px white;
+    }
+
+
+    40% {
+
+        box-shadow: 0 0 0px 0px;
+
+    }
+
+    60% {
+        box-shadow: 0 0 0px 0px;
+    }
+
+
+    80% {
+
+        box-shadow: 0 0 0px 0px;
+    }
+
+    100% {
+
+        transform: translateX(900px);
+        box-shadow: 0 0 7px 2px rgb(20, 20, 206);
+    }
+
+}
+.mn-cont {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 20%;
+    width: 100%;
+}
+
+.lbt {
+    width: 20%;
+    height: 100%;
+
+
+}
+
+
+.lbt .buttin {
+    opacity: 1;
+    height: 100%;
+    width: 93%;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    box-shadow: 0 0 0.5px 0.1px white;
+    background-color: rgb(34, 20, 20);
+}
+
+.lbt .buttin:hover {
+    width: 100%;
+    background-color: rgb(3, 3, 3);
+    color: white;
+    box-shadow: 0 0 10px 1px rgb(170, 0, 0);
+}
+
+.blink {
+    animation: blinking 3s linear forwards;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#buttinOFF {
+    display: none;
+}
+
+
+#spec-button button:hover {
+    background-color: blue;
+    color: black;
+
+    transition: 0.3s ease-in-out;
+}
+
+#spec-button button:active {
+    background-color: black;
+    color: white;
+}
+
+.buttons-cont button {
+    width: 27%;
+    height: 15%;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.fortham {
+
+    animation: nums 4.5s linear forwards;
+
+
+}
+
+@keyframes nums {
+
+    0% {
+
+        border: none;
+
+    }
+
+
+    20% {
+
+        border: none;
+
+    }
+
+
+    40% {
+
+
+        border: none;
+    }
+
+    60% {
+        border: none;
+    }
+
+
+    80% {
+
+        box-shadow: 0 0 15px 2px white;
+    }
+
+    100% {
+
+
+        box-shadow: 0 0 5px 2px white;
+    }
+
+
+
+
+}
+
+.buttons-cont button:hover {
+    background-color: white;
+    color: black;
+
+    transition: 0.3s ease-in-out;
+}
+
+.buttons-cont button:active {
+    background-color: black;
+    color: white;
+}
+
+/* #divide {
+    display: none;
+} */
+#times2 {
+    display: none;
+}
+
+.clear {
+    display: flex;
+    flex-wrap: wrap;
+    width: 7%;
+    height: 56%;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.img {
+    height: 60%;
+    width: 90%;
+    background-color: white;
+}
+
+.img:hover {
+    background-color: aqua;
+}
+
+#sq-rt p {
+    display: none;
+}
+.opac{
+    opacity: 1;
+}
+#remove,
+#clear,
+#sq-rt {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 36%;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.fiftham {
+    animation: clear 3.5s linear forwards;
+
+}
+
+@keyframes clear {
+
+    0% {
+
+        border: none;
+
+    }
+
+
+    20% {
+
+        border: none;
+    }
+
+
+    40% {
+
+
+        box-shadow: 0 0 15px 2px rgb(18, 218, 191);
+    }
+
+    60% {}
+
+
+    80% {
+
+        box-shadow: 0 0 10px 2px rgb(18, 218, 191);
+    }
+
+    100% {
+
+
+        box-shadow: 0 0 5px 2px rgb(18, 218, 191);
+    }
+
+}
+
+#remove:hover,
+#clear:hover,
+#sq-rt:hover {
+    background-color: rgb(18, 218, 191);
+    color: black;
+    width: 100%;
+
+    transition: 0.3s ease-in-out;
+}
+
+#remove:active,
+#clear:active,
+#sq-rt:active {
+    background-color: black;
+    color: white;
+    width: 98%;
+}
+
+#equalto {
+
+    width: 50%;
+
+}
+
+.sixtham {
+    animation: Eq 4s linear forwards;
+
+}
+
+@keyframes Eq {
+
+    0% {
+
+        border: none;
+
+    }
+
+
+    20% {
+
+        border: none;
+
+    }
+
+
+    40% {
+
+
+        border: none;
+    }
+
+    60% {
+        box-shadow: 0 0 15px 2px rgb(190, 224, 37);
+    }
+
+
+    80% {
+
+        box-shadow: 0 0 10px 2px rgb(190, 224, 37);
+    }
+
+    100% {
+
+
+        box-shadow: 0 0 5px 2px rgb(190, 224, 37);
+    }
+
+}
+
+#equalto:hover {
+    background-color: rgb(190, 224, 37);
+    color: black;
+    width: 50.9%;
+
+    transition: 0.3s ease-in-out;
+}
+
+#equalto:active {
+    background-color: black;
+    color: white;
+    width: 50%;
+}
+
+
+#opra {
+    display: flex;
+    gap: 10px;
+    width: 63%;
+    height: 100%;
+
+}
+
+.seventham {
+
+    animation: opra 4s linear forwards;
+
+}
+
+
+@keyframes opra {
+
+    0% {
+
+        border: none;
+
+    }
+
+
+    20% {
+
+        border: none;
+
+    }
+
+
+    40% {
+
+
+        border: none;
+    }
+
+    60% {
+
+        box-shadow: 0 0 20px 5px rgb(238, 13, 13);
+    }
+
+
+    80% {
+
+
+        box-shadow: 0 0 30px 7px rgb(238, 13, 13);
+    }
+
+    100% {
+
+
+
+        box-shadow: 0 0 5px 2px rgb(238, 13, 13);
+    }
+
+
+}
+
+#opra .opra2:hover {
+    background-color: rgb(238, 13, 13);
+    color: black;
+    width: 50%;
+
+    transition: 0.3s ease-in-out;
+}
+
+#opra .opra2:active {
+    background-color: black;
+    color: white;
+    width: 30%;
+}
