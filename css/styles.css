@@ -23,8 +23,7 @@ html {
 }
 
 body {
-
-
+    overflow: hidden;
     background-color: rgb(16, 15, 15);
 }
 
@@ -36,7 +35,7 @@ body {
     border: none;
     border-radius: 20px;
     background-color: rgb(18, 18, 18);
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 
     animation: shadow 5s linear forwards;
 }
@@ -206,15 +205,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
-    margin:150px auto 0px;
+    margin: 20px auto 0px;
     width: 500px;
     height: 500px;
     border-radius: 15px;
-
-
     background-color: black;
-
-
 }
 
 .firstam {
@@ -270,7 +265,6 @@ body {
     width: 100%;
     height: 20%;
     /* box-shadow: 0 0 5px 1px blue; */
-
 }
 
 #eq-input {
@@ -480,6 +474,7 @@ button {
     }
 
 }
+
 .mn-cont {
     display: flex;
     justify-content: center;
@@ -650,9 +645,11 @@ button {
 #sq-rt p {
     display: none;
 }
-.opac{
+
+.opac {
     opacity: 1;
 }
+
 #remove,
 #clear,
 #sq-rt {
